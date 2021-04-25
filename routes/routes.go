@@ -14,6 +14,10 @@ func Init() *echo.Echo {
 	})
 	e.POST("/register", controllers.Register)
 	e.POST("/login", controllers.Login)
+	e.POST("/alarm", controllers.AddAlarm)
+	e.PUT("/alarm", controllers.UpdateAlarm)
+	e.DELETE("/alarm/:id", controllers.DeleteAlarm)
+	e.POST("/alarm/perawat/:id", controllers.FetchAlarm)
 	return e
 
 }
