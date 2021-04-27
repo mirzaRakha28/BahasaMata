@@ -13,6 +13,7 @@ func Init() *echo.Echo {
 		return c.String(http.StatusOK, "Hello, this is echo!")
 	})
 	e.POST("/register", controllers.Register)
+	e.POST("/notifikasi", controllers.AddNotifikasi)
 	e.POST("/login", controllers.Login)
 	e.POST("/alarm", controllers.AddAlarm)
 	e.PUT("/alarm", controllers.UpdateAlarm)
