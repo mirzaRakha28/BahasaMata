@@ -1,0 +1,441 @@
+{
+	"info": {
+		"_postman_id": "13079ba0-b467-447c-a752-1abfa552d6ae",
+		"name": "BahasaMata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mirza rakha12",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "mirzarakha12332s33rre",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123mirzarakhadwi12313",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/alarm",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"alarm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mirza rakha12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "mirzarakha12332s33rre",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123mirzarakhadwi12313",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/notifikasi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mirza rakha12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_perawat",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_difabel",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/notifikasi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notifikasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/notifikasi",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mirza rakha12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_perawat",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_difabel",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/notifikasi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notifikasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/pasien",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mirza rakha12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_perawat",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_difabel",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/notifikasi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notifikasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/pasien",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mirza rakha12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_perawat",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_difabel",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/notifikasi",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notifikasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/alarm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_difabel",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_perawat",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "jam",
+							"value": "24",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/alarm",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"alarm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/alarm/perawat/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/alarm/perawat/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"alarm",
+						"perawat",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/alarm/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_difabel",
+							"value": "13",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_perawat",
+							"value": "12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "11",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "jam",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/alarm/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"alarm",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/alarm/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_difabel",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "id_perawat",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "jam",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/alarm",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"alarm"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

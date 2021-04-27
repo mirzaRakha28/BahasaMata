@@ -19,7 +19,7 @@ func Init() *echo.Echo {
 	e.POST("/alarm", controllers.AddAlarm)
 	e.POST("/alarm/perawat/:id", controllers.FetchAlarm)
 
-	e.PUT("/alarm", controllers.UpdateAlarm)
+	e.PUT("/alarm/:id", controllers.UpdateAlarm)
 
 	e.DELETE("/pasien", controllers.DeletePasien)
 	e.DELETE("/notifikasi", controllers.DeleteNotifikasi)

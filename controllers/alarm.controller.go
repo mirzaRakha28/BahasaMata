@@ -22,7 +22,7 @@ func AddAlarm(c echo.Context) error {
 }
 
 func UpdateAlarm(c echo.Context) error {
-	id := c.FormValue("id")
+	id := c.Param("id")
 	id_difabel := c.FormValue("id_difabel")
 	id_perawat := c.FormValue("id_perawat")
 	title := c.FormValue("title")
