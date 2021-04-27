@@ -14,11 +14,17 @@ func Init() *echo.Echo {
 	})
 	e.POST("/register", controllers.Register)
 	e.POST("/notifikasi", controllers.AddNotifikasi)
+	e.POST("/pasien", controllers.AddPasien)
 	e.POST("/login", controllers.Login)
 	e.POST("/alarm", controllers.AddAlarm)
-	e.PUT("/alarm", controllers.UpdateAlarm)
-	e.DELETE("/alarm/:id", controllers.DeleteAlarm)
 	e.POST("/alarm/perawat/:id", controllers.FetchAlarm)
+
+	e.PUT("/alarm", controllers.UpdateAlarm)
+
+	e.DELETE("/pasien", controllers.DeletePasien)
+	e.DELETE("/notifikasi", controllers.DeleteNotifikasi)
+	e.DELETE("/alarm/:id", controllers.DeleteAlarm)
+
 	return e
 
 }

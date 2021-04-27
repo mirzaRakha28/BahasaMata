@@ -7,11 +7,11 @@ import (
 	"github.com/mirzaRakha28/BahasaMata/models"
 )
 
-func AddNotifikasi(c echo.Context) error {
+func AddPasien(c echo.Context) error {
 	id_difabel := c.FormValue("id_difabel")
 	id_perawat := c.FormValue("id_perawat")
 
-	result, err := models.AddNotifikasi(id_difabel, id_perawat)
+	result, err := models.AddPasien(id_difabel, id_perawat)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, map[string]string{"message": err.Error()})
 	}
@@ -19,11 +19,11 @@ func AddNotifikasi(c echo.Context) error {
 
 }
 
-func DeleteNotifikasi(c echo.Context) error {
+func DeletePasien(c echo.Context) error {
 	id_difabel := c.FormValue("id_difabel")
 	id_perawat := c.FormValue("id_perawat")
 
-	result, err := models.DeleteNotifikasi(id_difabel, id_perawat)
+	result, err := models.DeletePasien(id_difabel, id_perawat)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, map[string]string{"message": err.Error()})
 	}

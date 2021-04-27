@@ -7,27 +7,27 @@ import (
 	"github.com/mirzaRakha28/BahasaMata/db"
 )
 
-type Notifikasi struct {
+type Pasien struct {
 	Id_difabel string `json:"id_difabel" validate:"required"`
 	Id_perawat string `json:"id_perawat" validate:"required"`
 	Name       string `json:"name" `
 }
 
-func DeleteNotifikasi(id_difabel, id_perawat string) (Response, error) {
+func DeletePasien(id_difabel, id_perawat string) (Response, error) {
 	var res Response
 
 	val := validator.New()
 
-	notifikasi := Notifikasi{
+	pasien := Pasien{
 		Id_difabel: id_difabel,
 		Id_perawat: id_perawat,
 	}
-	err := val.Struct(notifikasi)
+	err := val.Struct(pasien)
 	if err != nil {
 		return res, err
 	}
 	con := db.CreateCon()
-	sqlStatement := "DELETE FROM notifikasi WHERE id_difabel= ? AND id_perawat = ?"
+	sqlStatement := "DELETE FROM pasien WHERE id_difabel= ? AND id_perawat = ?"
 
 	stmt_insert, err := con.Prepare(sqlStatement)
 	if err != nil {
@@ -44,29 +44,29 @@ func DeleteNotifikasi(id_difabel, id_perawat string) (Response, error) {
 	}
 
 	res.Status = http.StatusContinue
-	res.Message = "Notifikasi"
+	res.Message = "pasien"
 	res.Data = map[string]int64{
 		"rows_affected": lastInsertedId,
 	}
 
 	return res, err
 }
-func AddNotifikasi(id_difabel, id_perawat string) (Response, error) {
+func AddPasien(id_difabel, id_perawat string) (Response, error) {
 	var res Response
-	var obj Notifikasi
-	var arrobj []Notifikasi
+	var obj Pasien
+	var arrobj []Pasien
 	val := validator.New()
 
-	notifikasi := Notifikasi{
+	pasien := Pasien{
 		Id_difabel: id_difabel,
 		Id_perawat: id_perawat,
 	}
-	err := val.Struct(notifikasi)
+	err := val.Struct(pasien)
 	if err != nil {
 		return res, err
 	}
 	con := db.CreateCon()
-	sqlStatement := "INSERT notifikasi (id_difabel, id_perawat) VALUES (?, ?)"
+	sqlStatement := "INSERT pasien (id_difabel, id_perawat) VALUES (?, ?)"
 
 	stmt_insert, err := con.Prepare(sqlStatement)
 	if err != nil {
@@ -75,7 +75,7 @@ func AddNotifikasi(id_difabel, id_perawat string) (Response, error) {
 
 	stmt_insert.Exec(id_difabel, id_perawat)
 
-	sqlStatementData := "SELECT * FROM notifikasi WHERE id_difabel = ? AND id_perawat = ?"
+	sqlStatementData := "SELECT * FROM pasien WHERE id_difabel = ? AND id_perawat = ?"
 	rows, err := con.Query(sqlStatementData, id_difabel, id_perawat)
 	defer rows.Close()
 
@@ -99,7 +99,7 @@ func AddNotifikasi(id_difabel, id_perawat string) (Response, error) {
 		return res, err
 	}
 	res.Status = http.StatusContinue
-	res.Message = "Notifikasi"
+	res.Message = "pasien"
 	res.Data = arrobj
 
 	return res, err
