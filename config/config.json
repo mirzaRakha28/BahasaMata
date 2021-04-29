@@ -1,7 +1,7 @@
 {
-    "DB_USERNAME" : "root",
-    "DB_PASSWORD" : "",
+    "DB_USERNAME" : "bec991883294bc",
+    "DB_PASSWORD" : "952d3807",
     "DB_PORT" : "3306",
-    "DB_HOST" : "127.0.0.1",
-    "DB_NAME" : "bahasa_mata"
+    "DB_HOST" : "us-cdbr-east-03.cleardb.com",
+    "DB_NAME" : "heroku_445b7be1de0b24e"
 }
