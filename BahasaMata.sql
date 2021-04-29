@@ -26,8 +26,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `alarm`
 --
-CREATE DATABASE bahasa_mata;
-USE  bahasa_mata;
 CREATE TABLE `alarm` (
   `id` int(11) NOT NULL,
   `id_difabel` int(11) NOT NULL,
