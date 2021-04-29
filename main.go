@@ -10,6 +10,6 @@ import (
 func main() {
 	db.Init()
 	e := routes.Init()
-	port := os.Getenv("PORT")
-	e.Logger.Fatal(e.Start(port))
+
+	e.Logger.Fatal(e.Start(":" + os.Getenv("PORT")))
 }
