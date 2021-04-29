@@ -3,5 +3,5 @@
     "DB_PASSWORD" : "ff5a4dc7",
     "DB_PORT" : "3306",
     "DB_HOST" : "us-cdbr-east-03.cleardb.com",
-    "DB_NAME" : "db_bahasamata"
+    "DB_NAME" : "heroku_735407bf8f1eaf6"
 }
